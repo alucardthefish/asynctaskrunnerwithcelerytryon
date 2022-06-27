@@ -3,3 +3,6 @@ env
 
 *.sqlite3
 *.db
+
+# celery beat schedule file
+celerybeat-schedule
