@@ -6,3 +6,6 @@ env
 
 # celery beat schedule file
 celerybeat-schedule
+
+static/*
+dist/*
