@@ -13,3 +13,11 @@ def multiply(x, y):
     time.sleep(25)
     result = x * y
     return f"The result of {x} times {y} is : {result}"
+
+@shared_task
+def sumup(x, y):
+    import time
+    time.sleep(12)
+    result = x + y
+    return f"The result of {x} sumup {y} is : {result}"
+
