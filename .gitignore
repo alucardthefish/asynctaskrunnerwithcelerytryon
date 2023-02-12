@@ -1,5 +1,7 @@
 __pycache__
 env
+.venv
+.vscode/
 .python-version
 
 *.sqlite3
