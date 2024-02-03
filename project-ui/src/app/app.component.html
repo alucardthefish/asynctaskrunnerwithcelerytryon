@@ -1,4 +1,19 @@
 
 <h1>{{ title }}</h1>
-<h3>App component</h3>
+<h3>App Users</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{ user.username }}</td>
+            <td>{{ user.email }}</td>
+        </tr>
+    </tbody>
+</table>
 

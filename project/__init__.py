@@ -12,6 +12,16 @@ def server_program():
 def create_app() -> FastAPI:
     app = FastAPI()
 
+    # Add cors to allow everything for dev purposes
+    origins = ["*"]
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
     # celery
     app.celery_app = create_celery()
 
